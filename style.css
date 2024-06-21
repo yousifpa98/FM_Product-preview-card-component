@@ -37,10 +37,12 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
+  padding: 1rem;
 }
 
 .preview-container {
   display: flex;
+  flex-direction: row;
   width: 37.5rem;
   height: 28.125rem;
   background-color: white;
@@ -120,4 +122,71 @@ body {
 
 .add-to-cart:hover {
   background-color: hsl(158, 36%, 16%);
+}
+
+/* Responsive Styles for tablets and small desktops */
+@media (max-width: 768px) {
+  .preview-container {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+  }
+
+  .preview-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .preview-content {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.875rem;
+  }
+
+  .price {
+    font-size: 1.25rem;
+  }
+
+  .add-to-cart {
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+/* Responsive Styles for mobile devices */
+@media (max-width: 375px) {
+  .preview-container {
+    width: 100%;
+    margin: 1rem;
+    flex-direction: column;
+  }
+
+  .preview-image {
+    width: 100%;
+    height: 200px;
+    background-image: url('./images/image-product-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .preview-content {
+    width: 100%;
+    padding: 0.75rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin: 0.75rem 0;
+  }
+
+  .price {
+    font-size: 1.125rem;
+  }
+
+  .add-to-cart {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+  }
 }
