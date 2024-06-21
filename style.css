@@ -76,7 +76,7 @@ body {
 .title {
   font-size: 2.1875rem;
   font-family: 'Fraunces', sans-serif;
-  margin: 1.25rem 0;
+  margin: 1rem 0;
 }
 
 .description {
@@ -94,7 +94,7 @@ body {
   color: hsl(158, 36%, 37%);
   font-family: 'Fraunces', sans-serif;
   font-weight: 800;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .old-price {
